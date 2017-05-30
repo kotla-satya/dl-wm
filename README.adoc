@@ -9,3 +9,4 @@ From project folder >> ./mvnw spring-boot:run
 url : localhost:8080/
 
 
+java -jar /Users/satya/dl-wm/dataloader/target/dl-wm-0.1.0.jar
