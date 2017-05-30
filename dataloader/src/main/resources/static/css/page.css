@@ -1,0 +1,24 @@
+table.table thead .sorted:after{
+    display: inline-block;
+    font-family: 'FontAwesome';
+    opacity: 0.8;
+    margin-left: 1em;
+}
+table.table thead .sorted.sorted-desc:after{
+    content: "\f15e";
+}
+table.table thead .sorted.sorted-asc:after{
+    content: "\f15d";
+}
+
+.sorted-desc::after, .sorted-asc::after {
+    float: right;
+}
+
+.sorted-desc::after{
+    content:"\25BC";
+}
+
+.sorted-asc::after{
+    content: "\25B2";
+}

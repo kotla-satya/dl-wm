@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/app.css}" href="../../css/app.css" />
+</head>
+<body>
+
+<div th:if="${message}">
+    <h2 th:text="${message}"/> <a href="/">Upload Another File</a>
+    <br/>
+    <table>
+        <thead>
+        <tr>
+            <th>CUSTOMER ID</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>JOINED DATE</th>
+            <th>SCORE</th>
+            <th>WEIGHT</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="customer: ${allCustomers}">
+            <td th:text="${customer.customerId}">AESA-ASDAS</td>
+            <td th:text="${customer.firstName}">Satya</td>
+            <td th:text="${customer.lastName}">Satya</td>
+            <td th:text="${#dates.format(customer.joinedDate, 'MM-dd-yyyy')}">12-24-2107</td>
+            <td th:text="${customer.ranking.score}">23</td>
+            <td th:text="${customer.ranking.weighting}">23.2</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

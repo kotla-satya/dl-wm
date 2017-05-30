@@ -1,0 +1,13 @@
+---
+tags: []
+projects: []
+---
+:spring_version: current
+:spring_boot_version: 1.5.3.RELEASE
+:project_id: dl-wm
+
+== 
+From project folder ./mvnw spring-boot:run
+localhost:8080
+
+
